@@ -237,3 +237,4 @@ On the opened Path pop up, click New and add the Terraform download folder. This
 Click OK on the above window to save the Path variable addition. If needed, restart your system to apply the variable changes.\
 Open a Command prompt and run this command to verify Terraform is installed successfully.
 ![Terminal Terraform](../media/image_1.28.PNG)
+Tarea terminadas
