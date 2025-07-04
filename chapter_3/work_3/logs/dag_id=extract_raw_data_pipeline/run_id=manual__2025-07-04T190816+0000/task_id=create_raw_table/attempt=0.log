@@ -1,0 +1,7 @@
+[2025-07-04T19:51:13.092+0000] {executor_loader.py:254} INFO - Loaded executor: CeleryExecutor
+[2025-07-04T19:51:13.093+0000] {logging_mixin.py:190} INFO - Sending to executor.
+[2025-07-04T19:51:13.094+0000] {base_executor.py:168} INFO - Adding to queue: ['***', 'tasks', 'run', 'extract_raw_data_pipeline', 'create_raw_table', 'manual__2025-07-04T19:08:16+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/extract_raw_data_pipeline.py']
+[2025-07-04T19:51:14.332+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-07-04T19:51:14.342+0000] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: extract_raw_data_pipeline.create_raw_table manual__2025-07-04T19:08:16+00:00 [upstream_failed]>, dependency 'Task Instance State' FAILED: Task is in the 'upstream_failed' state.
+[2025-07-04T19:51:14.350+0000] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: extract_raw_data_pipeline.create_raw_table manual__2025-07-04T19:08:16+00:00 [upstream_failed]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_states=_UpstreamTIStates(success=1, skipped=0, failed=1, upstream_failed=0, removed=0, done=2, success_setup=0, skipped_setup=0), upstream_task_ids={'extract_raw_data', 'create_raw_schema'}
+[2025-07-04T19:51:14.353+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run
